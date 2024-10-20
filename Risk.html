@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Interface</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="text-white text-2xl font-bold">FM TRADE</a>
+
+      <!-- Hamburger Icon (Visible on Small Screens) -->
+      <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Menu Items (Hidden by default on small screens) -->
+      <ul id="menu" class="hidden md:flex space-x-6 text-white">
+        <li><a href="/" class="hover:text-gray-200">Home</a></li>
+        <li><a href="./about.html" class="hover:text-gray-200">About</a></li>
+        <li><a href="./service.html" class="hover:text-gray-200">Services</a></li>
+        <li><a href="./contact.html" class="hover:text-gray-200">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu Items (Visible when toggled) -->
+    <ul id="mobile-menu" class="hidden bg-blue-600 md:hidden flex flex-col space-y-4 p-4 text-white">
+      <li><a href="/" class="hover:text-gray-200">Home</a></li>
+      <li><a href="./about.html" class="hover:text-gray-200">About</a></li>
+      <li><a href="./service.html" class="hover:text-gray-200">Services</a></li>
+      <li><a href="./contact.html" class="hover:text-gray-200">Contact</a></li>
+    </ul>
+  </nav>
+
+   <!-- Main Content -->
+   <div class="container mx-auto mt-8">
+    <h1 class="text-4xl font-bold text-center mb-8">
+      Digital Project Management
+    </h1>
+
+    <!-- Grid Container -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mx-auto">
+      <!-- Task Card -->
+      <a href="#" class="hover:text-green-500">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <img
+            src="./images/file.gif"
+            alt="Task"
+            class="mx-auto h-16 w-16 mb-4"
+          />
+          <h2 class="text-xl font-bold mb-2">Damerage</h2>
+        </div>
+      </a>
+
+      <!-- Products Card -->
+      <a href="#" class="hover:text-green-500">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <img
+            src="./images/digital-product.png"
+            alt="Products"
+            class="mx-auto h-16 w-16 mb-4"
+          />
+          <h2 class="text-xl font-bold mb-2">waste</h2>
+        </div>
+      </a>
+      <!-- Products Card -->
+      <a href="#" class="hover:text-green-500">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <img
+            src="./images/digital-product.png"
+            alt="Products"
+            class="mx-auto h-16 w-16 mb-4"
+          />
+          <h2 class="text-xl font-bold mb-2">Unsole</h2>
+        </div>
+      </a>
+      <!-- Products Card -->
+      <a href="#" class="hover:text-green-500">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <img
+            src="./images/digital-product.png"
+            alt="Products"
+            class="mx-auto h-16 w-16 mb-4"
+          />
+          <h2 class="text-xl font-bold mb-2">Shortage</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4 mt-12">
+    <p>&copy; 2024 BizDashboard. All Rights Reserved.</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="./about.html" class="hover:text-gray-300">Privacy Policy</a>
+      <a href="#" class="hover:text-gray-300">Terms of Service</a>
+      <a href="./contact.html" class="hover:text-gray-300">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Responsive Navbar -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
